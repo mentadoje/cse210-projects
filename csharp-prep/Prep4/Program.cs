@@ -43,9 +43,5 @@ class Program
         }     
         Console.WriteLine($"The max is: {max}");
 
-        foreach (int number in numbers)
-        {
-            Console.WriteLine($"{number}");
-        }
     }
 }
