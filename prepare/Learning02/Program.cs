@@ -12,17 +12,17 @@ class Program
 
         Job job2 = new Job();
         job2._jobTitle = "Manager";
-        job2._company = "Apple";
+        job2._company = "HP";
         job2._startYear = 2022;
         job2._endYear = 2023;
 
         Resume myResume = new Resume();
-        myResume._name = "Jared Mentado";
+        myResume._name = "Jared Mentado Mendoza";
 
         myResume._jobs.Add(job1);
         myResume._jobs.Add(job2);
 
-
+        myResume.Display();
 
     }
 }
