@@ -16,6 +16,12 @@ class Program
         job2._startYear = 2022;
         job2._endYear = 2023;
 
+        Job job3 = new Job();
+        job3._jobTitle = "Junior developer";
+        job3._company = "Apple";
+        job3._startYear = 2018;
+        job3._endYear = 2019;
+
         Resume myResume = new Resume();
         myResume._name = "Jared Mentado Mendoza";
 
