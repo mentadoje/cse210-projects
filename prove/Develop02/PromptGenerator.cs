@@ -12,11 +12,11 @@ public class PromptGenerator
         //Create a random object and the list of prompts
         Random randomPrompt = new Random();
         string[] prompts = {
-            "Who was the most interesting person I interacted with today?",
-            "What was the best part of my day?",
-            "How did I see the hand of the Lord in my life today?",
-            "What was the strongest emotion I felt today?",
-            "If I had one thing I could do over today, what would it be?",
+            "What did you learn today?",
+            "What do you like to remember from today?",
+            "Why did today was a 'good day'?",
+            "What was the best part of your day?",
+            "Tell me the funniest moment of your day... ",
         };
         
         // Use the Next method to return a random number inside the prompt list length

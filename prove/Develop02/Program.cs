@@ -29,10 +29,12 @@ class Program
                         journal.DisplayAll();
                         break;
                     case 3:
-                        Console.WriteLine("Loading from file");
+                        Console.WriteLine("Write the name of the file: ");
+                        journal.LoadFromFile(Console.ReadLine());
                         break;
                     case 4:
-                        Console.WriteLine("Saving to a File");
+                        Console.WriteLine("Write the name of the file: ");
+                        journal.SaveToFile(Console.ReadLine());
                         break;
                     case 5:
                         Console.WriteLine("Program finished");
