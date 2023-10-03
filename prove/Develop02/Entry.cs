@@ -20,7 +20,6 @@ public class Entry
     {
         // The display function will show the date, the prompt and the entry of the user
         Console.WriteLine($"Date: {_date} - Prompt: {_promptText} \n Entry: {_entryText}");
-
     }
 
     public void Write()

@@ -7,7 +7,7 @@ public class Journal
     public List<Entry> _entries = new List<Entry>();
     public void AddEntry()
     {
-        //The add entry function will create an Entry object and store it
+        //The add entry function will create an Entry object and store it in the _entries list
         Entry entry = new Entry();
         entry.Write();
         _entries.Add(entry);

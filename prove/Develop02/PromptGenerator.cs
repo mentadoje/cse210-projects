@@ -9,9 +9,10 @@ public class PromptGenerator
         
     public string GetRandomPrompt()
     {
-        //Create a random object and the list of prompts
+        //Create a random object and the list of prompts inside a string array
         Random randomPrompt = new Random();
-        string[] prompts = {
+        string[] prompts = 
+        {
             "What did you learn today?",
             "What do you like to remember from today?",
             "Why did today was a 'good day'?",
@@ -23,6 +24,7 @@ public class PromptGenerator
         int listIndex = randomPrompt.Next(prompts.Length);
         Console.WriteLine("{0}", prompts[listIndex]);
         return prompts[listIndex];
+
 
     }
 }
