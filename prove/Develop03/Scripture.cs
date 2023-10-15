@@ -5,6 +5,7 @@ public class Scripture
 {
     private List<Word> _words = new List<Word>();
     private Reference _reference;
+    private int _hiddenWords;
     
     Random randomWord = new Random();
 
@@ -17,16 +18,33 @@ public class Scripture
         
     }
 
-    public void HideRandomWords(int wordsToHide)
+    public void HideRandomWords(int numberToHide)
     {
-
-        for (int i = 0; i < wordsToHide ; i++ )
+        if (_hiddenWords >= _words.Count)
         {
-            int index = randomWord.Next(0, _words.Count);
-            _words[index].Hide();
+            return;
         }
 
+        for (int i = 0; i < numberToHide; i++)
+        {
+            if (_hiddenWords >= _words.Count)
+            {
+                return;
+            }
+
+            int randomIndex;
+            do
+            {
+                randomIndex = randomWord.Next(0, _words.Count);
+            } 
+            
+            while (_words[randomIndex].IsHidden());
+
+            _words[randomIndex].Hide();
+            _hiddenWords++;
+        }
     }
+
 
     public string GetDisplayText()
     {
